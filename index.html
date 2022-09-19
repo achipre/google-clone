@@ -1,10 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Google Clone</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">  
+
 </head>
 <body>
   <header>
@@ -17,11 +22,13 @@
           <a href="#">Imágenes</a>
         </li>
         <li>
-          <a href="#">𓃑</a>
+          <a href="#">
+            <img src="data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHZpZXdCb3g9IjAgMCAxNzIgMTcyIj48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyNS44LDI1LjgpIHNjYWxlKDAuNywwLjcpIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9Im5vbnplcm8iIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2UtbGluZWNhcD0iYnV0dCIgc3Ryb2tlLWxpbmVqb2luPSJtaXRlciIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBzdHJva2UtZGFzaGFycmF5PSIiIHN0cm9rZS1kYXNob2Zmc2V0PSIwIiBmb250LWZhbWlseT0ibm9uZSIgZm9udC13ZWlnaHQ9Im5vbmUiIGZvbnQtc2l6ZT0ibm9uZSIgdGV4dC1hbmNob3I9Im5vbmUiIHN0eWxlPSJtaXgtYmxlbmQtbW9kZTogbm9ybWFsIj48cGF0aCBkPSJNMCwxNzJ2LTE3MmgxNzJ2MTcyeiIgZmlsbD0ibm9uZSI+PC9wYXRoPjxnIGZpbGw9IiNmZmZmZmYiPjxwYXRoIGQ9Ik0zNS44MzMzMywyMS41Yy03LjkxOTE3LDAgLTE0LjMzMzMzLDYuNDE0MTcgLTE0LjMzMzMzLDE0LjMzMzMzYzAsNy45MTkxNyA2LjQxNDE3LDE0LjMzMzMzIDE0LjMzMzMzLDE0LjMzMzMzYzcuOTE5MTcsMCAxNC4zMzMzMywtNi40MTQxNyAxNC4zMzMzMywtMTQuMzMzMzNjMCwtNy45MTkxNyAtNi40MTQxNywtMTQuMzMzMzMgLTE0LjMzMzMzLC0xNC4zMzMzM3pNODYsMjEuNWMtNy45MTkxNywwIC0xNC4zMzMzMyw2LjQxNDE3IC0xNC4zMzMzMywxNC4zMzMzM2MwLDcuOTE5MTcgNi40MTQxNywxNC4zMzMzMyAxNC4zMzMzMywxNC4zMzMzM2M3LjkxOTE3LDAgMTQuMzMzMzMsLTYuNDE0MTcgMTQuMzMzMzMsLTE0LjMzMzMzYzAsLTcuOTE5MTcgLTYuNDE0MTcsLTE0LjMzMzMzIC0xNC4zMzMzMywtMTQuMzMzMzN6TTEzNi4xNjY2NywyMS41Yy03LjkxOTE3LDAgLTE0LjMzMzMzLDYuNDE0MTcgLTE0LjMzMzMzLDE0LjMzMzMzYzAsNy45MTkxNyA2LjQxNDE3LDE0LjMzMzMzIDE0LjMzMzMzLDE0LjMzMzMzYzcuOTE5MTcsMCAxNC4zMzMzMywtNi40MTQxNyAxNC4zMzMzMywtMTQuMzMzMzNjMCwtNy45MTkxNyAtNi40MTQxNywtMTQuMzMzMzMgLTE0LjMzMzMzLC0xNC4zMzMzM3pNMzUuODMzMzMsNzEuNjY2NjdjLTcuOTE5MTcsMCAtMTQuMzMzMzMsNi40MTQxNyAtMTQuMzMzMzMsMTQuMzMzMzNjMCw3LjkxOTE3IDYuNDE0MTcsMTQuMzMzMzMgMTQuMzMzMzMsMTQuMzMzMzNjNy45MTkxNywwIDE0LjMzMzMzLC02LjQxNDE3IDE0LjMzMzMzLC0xNC4zMzMzM2MwLC03LjkxOTE3IC02LjQxNDE3LC0xNC4zMzMzMyAtMTQuMzMzMzMsLTE0LjMzMzMzek04Niw3MS42NjY2N2MtNy45MTkxNywwIC0xNC4zMzMzMyw2LjQxNDE3IC0xNC4zMzMzMywxNC4zMzMzM2MwLDcuOTE5MTcgNi40MTQxNywxNC4zMzMzMyAxNC4zMzMzMywxNC4zMzMzM2M3LjkxOTE3LDAgMTQuMzMzMzMsLTYuNDE0MTcgMTQuMzMzMzMsLTE0LjMzMzMzYzAsLTcuOTE5MTcgLTYuNDE0MTcsLTE0LjMzMzMzIC0xNC4zMzMzMywtMTQuMzMzMzN6TTEzNi4xNjY2Nyw3MS42NjY2N2MtNy45MTkxNywwIC0xNC4zMzMzMyw2LjQxNDE3IC0xNC4zMzMzMywxNC4zMzMzM2MwLDcuOTE5MTcgNi40MTQxNywxNC4zMzMzMyAxNC4zMzMzMywxNC4zMzMzM2M3LjkxOTE3LDAgMTQuMzMzMzMsLTYuNDE0MTcgMTQuMzMzMzMsLTE0LjMzMzMzYzAsLTcuOTE5MTcgLTYuNDE0MTcsLTE0LjMzMzMzIC0xNC4zMzMzMywtMTQuMzMzMzN6TTM1LjgzMzMzLDEyMS44MzMzM2MtNy45MTkxNywwIC0xNC4zMzMzMyw2LjQxNDE3IC0xNC4zMzMzMywxNC4zMzMzM2MwLDcuOTE5MTcgNi40MTQxNywxNC4zMzMzMyAxNC4zMzMzMywxNC4zMzMzM2M3LjkxOTE3LDAgMTQuMzMzMzMsLTYuNDE0MTcgMTQuMzMzMzMsLTE0LjMzMzMzYzAsLTcuOTE5MTcgLTYuNDE0MTcsLTE0LjMzMzMzIC0xNC4zMzMzMywtMTQuMzMzMzN6TTg2LDEyMS44MzMzM2MtNy45MTkxNywwIC0xNC4zMzMzMyw2LjQxNDE3IC0xNC4zMzMzMywxNC4zMzMzM2MwLDcuOTE5MTcgNi40MTQxNywxNC4zMzMzMyAxNC4zMzMzMywxNC4zMzMzM2M3LjkxOTE3LDAgMTQuMzMzMzMsLTYuNDE0MTcgMTQuMzMzMzMsLTE0LjMzMzMzYzAsLTcuOTE5MTcgLTYuNDE0MTcsLTE0LjMzMzMzIC0xNC4zMzMzMywtMTQuMzMzMzN6TTEzNi4xNjY2NywxMjEuODMzMzNjLTcuOTE5MTcsMCAtMTQuMzMzMzMsNi40MTQxNyAtMTQuMzMzMzMsMTQuMzMzMzNjMCw3LjkxOTE3IDYuNDE0MTcsMTQuMzMzMzMgMTQuMzMzMzMsMTQuMzMzMzNjNy45MTkxNywwIDE0LjMzMzMzLC02LjQxNDE3IDE0LjMzMzMzLC0xNC4zMzMzM2MwLC03LjkxOTE3IC02LjQxNDE3LC0xNC4zMzMzMyAtMTQuMzMzMzMsLTE0LjMzMzMzeiI+PC9wYXRoPjwvZz48L2c+PC9nPjwvc3ZnPg==" alt="menu">
+          </a>
         </li>
         <li>
           <a href="#">
-            <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="">
+            <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="perfil" title="Cuenta de Google">
           </a>
         </li>
       </ul>
@@ -29,7 +36,7 @@
   </header>
 
   <main>
-    <section>Google</section>
+    <section  class="titulo">Google</section>
     <section>
       <input type="text" name="" id="">
     </section>
@@ -43,20 +50,20 @@
   </main>
 
   <footer>
-    <section>País</section>
-    <section>
+    <section class="footer-top">Ecuador</section>
+    <section class="footer-under-left">
       <ul>
-        <li>Sobre Google</li>
-        <li>Publicidad</li>
-        <li>Negocios</li>
-        <li>Cómo funciona la Búsqueda</li>
+        <li><a href="#">Sobre Google</a></li>
+        <li><a href="#">Publicidad</a></li>
+        <li><a href="#">Negocios</a></li>
+        <li><a href="#">Cómo funciona la Búsqueda</a></li>
       </ul>
     </section>
-    <section>
+    <section class="footer-under-right">
       <ul>
-        <li>Publicidad</li>
-        <li>Condiciones</li>
-        <li>Preferencias</li>
+        <li><a href="#">Publicidad</a></li>
+        <li><a href="#">Condiciones</a></li>
+        <li><a href="#">Preferencias</a></li>
       </ul>
     </section>
   </footer>
